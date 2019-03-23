@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="580.0" style="-fx-background-color: d32f2f;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.LoginContoller">
+
+
+
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="55.0" prefWidth="580.0" style="-fx-background-color: d32f2f;">
+         <effect>
+            <InnerShadow height="106.74" radius="31.435" />
+         </effect>
+      </AnchorPane>
+      
+      <Label alignment="CENTER" layoutX="215.0" layoutY="8.0" prefHeight="35.0" prefWidth="151.0" text="Todo App">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <FlowPane layoutX="474.0" layoutY="-9.0" prefHeight="52.0" prefWidth="70.0">
+         <children>  <fx:include source="titleBar.fxml" />
+         </children>
+      </FlowPane>
+      <AnchorPane layoutY="55.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="245.0" prefWidth="580.0" style="-fx-background-color: white;">
+
+         <children>
+
+
+            <JFXTextField fx:id="textFiledUsername" labelFloat="true" layoutX="202.0" layoutY="65.0" prefHeight="25.0" prefWidth="215.0" promptText="Username" />
+            <JFXPasswordField fx:id="textFieldPassword" labelFloat="true" layoutX="204.0" layoutY="111.0" prefHeight="25.0" prefWidth="215.0" promptText="Password" />
+            <Label alignment="CENTER" layoutX="252.0" layoutY="14.0" prefHeight="17.0" prefWidth="70.0" text="Login">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="loginButton" layoutX="258.0" layoutY="148.0" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: #1b1b1b;" text="Login" textFill="WHITE" />
+            <Label layoutX="204.0" layoutY="197.0" text="Don't have an account?">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="signupHyperlink" layoutX="339.0" layoutY="195.0" text="Sign up" />
+            <ImageView fitHeight="35.0" fitWidth="26.0" layoutX="173.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-user-90.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="26.0" layoutX="176.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-password-filled-50.png" />
+               </image>
+            </ImageView>
+
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

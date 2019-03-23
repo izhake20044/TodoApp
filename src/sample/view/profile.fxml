@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="245.0" prefWidth="476.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.ProfileController">
+   <children>
+      <JFXButton fx:id="closeButton" cancelButton="true" layoutX="153.0" layoutY="195.0" onAction="#exitProfile" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #304ffe;" text="Close" textFill="WHITE" />
+      <Label layoutX="15.0" layoutY="88.0" prefHeight="25.0" prefWidth="93.0" text="First Name:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="59.0" prefHeight="25.0" prefWidth="85.0" text="Username:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="119.0" prefHeight="25.0" prefWidth="85.0" text="Last Name:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="151.0" prefHeight="25.0" prefWidth="85.0" text="Gender:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Line accessibleRole="BUTTON" blendMode="SRC_ATOP" endX="254.0" fill="#9c12ff" layoutX="222.0" layoutY="88.0" startX="-221.0" stroke="#3b00ff" strokeMiterLimit="1000.0" strokeWidth="0.5" />
+      <Line accessibleRole="BUTTON" blendMode="SRC_ATOP" endX="254.0" fill="#9c12ff" layoutX="222.0" layoutY="115.0" startX="-221.0" stroke="#3b00ff" strokeMiterLimit="1000.0" strokeWidth="0.5" />
+      <Line accessibleRole="BUTTON" blendMode="SRC_ATOP" endX="254.0" fill="#9c12ff" layoutX="222.0" layoutY="146.0" startX="-221.0" stroke="#3b00ff" strokeMiterLimit="1000.0" strokeWidth="0.5" />
+      <Line accessibleRole="BUTTON" blendMode="SRC_ATOP" endX="254.0" fill="#9c12ff" layoutX="222.0" layoutY="179.0" startX="-221.0" stroke="#3b00ff" strokeMiterLimit="1000.0" strokeWidth="0.5" />
+      <JFXTextField fx:id="userNameField" alignment="TOP_CENTER" editable="false" focusColor="#9703ab" layoutX="160.0" layoutY="60.0" prefHeight="26.0" prefWidth="152.0" unFocusColor="BLACK">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="firstNameField" alignment="TOP_CENTER" editable="false" focusColor="#9703ab" layoutX="160.0" layoutY="87.0" prefHeight="26.0" prefWidth="152.0" unFocusColor="BLACK">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="lastNameField" alignment="TOP_CENTER" editable="false" focusColor="#9703ab" layoutX="160.0" layoutY="118.0" prefHeight="26.0" prefWidth="152.0" unFocusColor="BLACK">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="genderField" alignment="TOP_CENTER" editable="false" focusColor="#9703ab" layoutX="160.0" layoutY="151.0" prefHeight="26.0" prefWidth="152.0" unFocusColor="BLACK">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <AnchorPane layoutY="-1.0" prefHeight="41.0" prefWidth="477.0" style="-fx-background-color: #263238;">
+         <effect>
+            <DropShadow height="83.03" radius="41.015" spread="0.05" width="83.03" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

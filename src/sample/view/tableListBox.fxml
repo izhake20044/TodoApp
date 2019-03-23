@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="83.0" prefWidth="360.0" style="-fx-background-color: #424242;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="statusImageView" fitHeight="80.0" fitWidth="74.0" layoutX="-9.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/tasks.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="taskLabel" layoutX="55.0" layoutY="2.0" prefHeight="25.0" prefWidth="270.0" text="Task" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <DropShadow color="#c6b3b3" />
+         </effect>
+      </Label>
+      <Label fx:id="dateLabel" alignment="CENTER" layoutX="159.0" layoutY="69.0" prefHeight="16.0" style="-fx-background-color: #424242;" text="Date Created" textFill="#1aab00">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="descriptionLbael" layoutX="57.0" layoutY="27.0" prefHeight="35.0" prefWidth="323.0" text="Description" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <DropShadow color="#2b6a97" height="0.0" radius="14.325" spread="0.71" width="59.3" />
+         </effect>
+      </Label>
+      <ImageView fx:id="deleteButton" fitHeight="25.0" fitWidth="28.0" layoutX="356.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-delete-document-480.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="updateImage" fitHeight="25.0" fitWidth="28.0" layoutX="328.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-change-24.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

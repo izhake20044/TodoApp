@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.AddItemFormController">
+   <children>
+      <JFXButton fx:id="saveTaskButton" disable="true" layoutX="228.0" layoutY="251.0" prefHeight="40.0" prefWidth="185.0" style="-fx-background-color: #d32f2f;" text="Save Task" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <AnchorPane prefHeight="68.0" prefWidth="640.0" style="-fx-background-color: #263238;">
+         <children>
+            <FlowPane layoutX="534.0" layoutY="-5.0" prefHeight="52.0" prefWidth="70.0">
+               <children>
+                  <fx:include source="titleBar.fxml" />
+               </children>
+            </FlowPane>
+         </children>
+         <effect>
+            <InnerShadow height="62.27" radius="20.317500000000003" />
+         </effect>
+      </AnchorPane>
+      <JFXTextField fx:id="taskInput" focusColor="#f90464" layoutX="177.0" layoutY="97.0" prefHeight="48.0" prefWidth="287.0" promptText="Task">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="descriptionInput" focusColor="#f90464" layoutX="177.0" layoutY="169.0" prefHeight="48.0" prefWidth="287.0" promptText="Description">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="taskAddedLabel" alignment="CENTER" layoutX="222.0" layoutY="313.0" prefHeight="29.0" prefWidth="197.0" text="Task Added Successfully!" textFill="#126102" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <JFXButton fx:id="myTasksButton" layoutX="506.0" layoutY="319.0" prefHeight="29.0" prefWidth="120.0" style="-fx-background-color: #c62828;" text="My Tasks ( )" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <MenuBar fx:id="menuBar" layoutX="-3.0" layoutY="-1.0" minWidth="-Infinity" style="-fx-background-color: white;">
+         <menus>
+            <Menu fx:id="menuUser" mnemonicParsing="false" text="User">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="My Profile" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

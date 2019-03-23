@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="330.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.RegistrationController">
+   <children>
+      <AnchorPane prefHeight="55.0" prefWidth="580.0" style="-fx-background-color: d32f2f;">
+         <children>
+
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="195.0" layoutY="2.0" prefHeight="45.0" prefWidth="190.0" text="Registration">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow height="106.74" radius="31.435" />
+         </effect>
+      </AnchorPane>
+      <JFXTextField fx:id="userNameTextF" layoutX="177.0" layoutY="60.0" prefHeight="25.0" prefWidth="225.0" promptText="Username">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="passwordTextF" layoutX="178.0" layoutY="95.0" prefHeight="25.0" prefWidth="225.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font></JFXPasswordField>
+      <JFXPasswordField fx:id="REpasswordTextF" layoutX="178.0" layoutY="129.0" prefHeight="25.0" prefWidth="225.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font></JFXPasswordField>
+      <JFXTextField fx:id="firstNameTextF" layoutX="179.0" layoutY="159.0" prefHeight="25.0" prefWidth="225.0" promptText="First name">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="lastNameTextF" layoutX="178.0" layoutY="191.0" prefHeight="25.0" prefWidth="225.0" promptText="Last name">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXCheckBox fx:id="maleCheckBox" layoutX="211.0" layoutY="232.0" selected="true" text="Male">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="femaleCheckBox" layoutX="299.0" layoutY="233.0" text="Female">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </JFXCheckBox>
+      <JFXButton fx:id="signUpButton" layoutX="191.0" layoutY="263.0" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #424242;" text="Sign Up" textFill="WHITE" />
+      <FlowPane layoutX="475.0" layoutY="-6.0" prefHeight="55.0" prefWidth="94.0">
+         <children>
+            <fx:include source="titleBar.fxml" />
+         </children>
+      </FlowPane>
+      <Label fx:id="passwordError" layoutX="421.0" layoutY="117.0" prefHeight="17.0" prefWidth="144.0" textFill="#ee1c1c">
+         <effect>
+            <Glow level="0.72" />
+         </effect>
+      </Label>
+      <Label fx:id="rePasswordError" layoutX="421.0" layoutY="151.0" prefHeight="17.0" prefWidth="144.0" textFill="#ee1c1c">
+         <effect>
+            <Glow level="0.72" />
+         </effect>
+      </Label>
+      <Label fx:id="firstNameError" layoutX="421.0" layoutY="183.0" prefHeight="17.0" prefWidth="144.0" textFill="#ee1c1c">
+         <effect>
+            <Glow level="0.72" />
+         </effect>
+      </Label>
+      <Label fx:id="lastNameError" layoutX="421.0" layoutY="213.0" prefHeight="17.0" prefWidth="144.0" textFill="#ee1c1c">
+         <effect>
+            <Glow level="0.72" />
+         </effect>
+      </Label>
+      <Label fx:id="userNameError" layoutX="421.0" layoutY="82.0" prefHeight="17.0" prefWidth="144.0" textFill="#ee1c1c">
+         <effect>
+            <Glow level="0.72" />
+         </effect>
+      </Label>
+      <Label fx:id="genderError" layoutX="414.0" layoutY="239.0" prefHeight="17.0" prefWidth="144.0" textFill="#ee1c1c">
+         <effect>
+            <Glow level="0.72" />
+         </effect>
+      </Label>
+      <Label layoutX="193.0" layoutY="298.0" prefHeight="30.0" prefWidth="180.0" text="Already have an account?">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="signInHyper" layoutX="340.0" layoutY="302.0" text="Sign in" />
+   </children>
+</AnchorPane>
